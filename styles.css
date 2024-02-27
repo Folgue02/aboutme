@@ -1,0 +1,97 @@
+:root {
+    --background-color: #191919;
+    --foreground-color: #BAB8B1; 
+    --section-border-radius: 20px;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    font-family: Arial;
+}
+
+h1 {
+    font-family: Arial;
+    text-align: center;
+}
+
+table.content-table {
+    border-collapse: collapse;
+    padding: 20px;
+    width: 100%;
+}
+
+div.section-card {
+    cursor: pointer;
+    position: relative;
+    width: 98%;
+    height: 350px;
+    border-radius: var(--section-border-radius);
+    transition: 0.5s;
+}
+
+div.section-card:hover {
+    box-shadow: 3px 3px 10px black;
+}
+
+div.section-content {
+    padding: 5px;
+}
+
+div.section-content hr {
+    margin-top: 5px;
+}
+
+p.section-title { 
+    margin-bottom: 0;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+p.section-description {
+    opacity: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    transition: opacity 1.5s;
+}
+
+div.section-bg {
+    background-image: url("images/sample-lake.jpg");
+    border-radius: var(--section-border-radius);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0;
+    filter: blur(4px);
+    transition: 0.8s;
+}
+
+table.content-table tr td {
+    width: 49%; 
+}
+
+div.section-card:hover div.section-bg {
+    opacity: 0.3;
+}
+
+div.section-card:hover div.section-content p.section-description {
+    opacity: 1;
+    transition: 0.80s;
+}
+
+div.section-card:hover div.section-content p.section-title {
+    position: relative;
+    padding-left: 20px;
+}
+
+div.personal-projects div.section-bg {
+    background-image: url("images/rusty-gears.jpg");
+}
+
+div.mini-projects div.section-bg {
+    background-image: url("images/circuit-board.jpg");
+}

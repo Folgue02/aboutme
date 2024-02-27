@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nanum+Pen+Script&family=Roboto:wght@100;300;400&display=swap');
+
 :root {
-    --background-color: #191919;
-    --foreground-color: #BAB8B1; 
+    --background-color: #1c2329;
+    --foreground-color: #f9fafb; 
     --section-border-radius: 20px;
 }
 
 html {
     background-color: var(--background-color);
     color: var(--foreground-color);
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 h1 {
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 65px;
     text-align: center;
 }
 
@@ -42,7 +47,7 @@ div.section-content hr {
     margin-top: 5px;
 }
 
-p.section-title { 
+div.section-card  div.section-content p.section-title { 
     margin-bottom: 0;
     font-size: 40px;
     transition: 0.5s;

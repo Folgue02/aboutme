@@ -1,17 +1,17 @@
 function gotoPersonal() {
-    window.location.href = "/personal-projects.html"
+    window.location.href = "./personal-projects.html"
 }
 
 function gotoHomepage() {
-    window.location.href = "/index.html"
+    window.location.href = "./index.html"
 }
 
 function gotoAboutMe() {
-    window.location.href = "about-me.html"
+    window.location.href = "./about-me.html"
 }
 
 function gotoMiniProjects() {
-    window.location.href = "/mini-projects.html"
+    window.location.href = "./mini-projects.html"
 }
 
 document.getElementById("personal-projects").addEventListener("click", () => {
